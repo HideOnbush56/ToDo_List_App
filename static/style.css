@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{  
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .content {
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+
+/* Blur effect */
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Imgs/BG.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); 
+    z-index: -1;
+}
+ .container{
+    background: white;
+    padding: 25px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 10px;
+ }
+ .header{
+    display: flex;
+    align-items: center;   
+    margin-bottom: 20px;
+    padding-left: 5px;
+    justify-content: center;
+ }
+ .body-ToDo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.body-ToDo input{
+    flex: 1;
+    background: transparent;
+    border:none;
+    outline: none;
+    padding: 15px 0;
+    font-size: 20px;  
+}
+.body-ToDo img{
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    padding: 15px;
+    background: rgb(238, 203, 157);
+    border-radius: 40px;
+    transition-duration: 0.6s;
+    
+}
+.body-ToDo img:hover {
+    background-color: rgb(241, 148, 25);
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
